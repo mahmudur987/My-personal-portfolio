@@ -17,7 +17,7 @@ const Resumi = () => {
   return (
     <div>
       <div className="mb5">
-        <button className="btn btn-info my-5" onClick={printDocument}>
+        <button className="btn btn-info my-6" onClick={printDocument}>
           Print Resumi As Pdf
         </button>
       </div>
