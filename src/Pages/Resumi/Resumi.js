@@ -33,8 +33,8 @@ const Resumi = () => {
         }}
       >
         {/* <div>Note: Here the dimensions of div are same as A4</div>  */}
-        <div className=" h-full w-3/4 mx-auto">
-          <img className="w-full " src={picture} alt="" />
+        <div className="p-2">
+          <img className="rounded-lg  " src={picture} alt="" />
         </div>
       </div>
     </div>

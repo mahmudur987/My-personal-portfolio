@@ -11,7 +11,7 @@ const Projects = () => {
   }, []);
   // console.log(projects);
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
       {projects.map((project) => (
         <Project key={project._id} project={project}></Project>
       ))}

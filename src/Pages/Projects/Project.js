@@ -5,9 +5,13 @@ const Project = ({ project }) => {
   // console.log(project);
   const { projectName, about, _id, picture } = project;
   return (
-    <div className="card card-compact h-96  bg-base-100 shadow-xl">
+    <div className="card card-compact p-2 bg-base-100 shadow-xl">
       <figure>
-        <img src={picture} alt="Shoes" />
+        <img
+          className=" h-80 w-full m-3 rounded-lg"
+          src={picture}
+          alt="Shoes"
+        />
       </figure>
       <div className="card-body text-left">
         <h2 className="card-title">Projects Name : {projectName} </h2>
