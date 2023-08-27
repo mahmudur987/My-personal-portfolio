@@ -98,7 +98,7 @@ const Contacts = () => {
           </p>
         </form>
       </div>
-
+      {Result && <p>.</p>}
       <div className="flex justify-between w-full my-24">
         <div className="flex flex-col items-center gap-5">
           <h3 className="text-3xl font-bold">Email Me</h3>
