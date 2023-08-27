@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-hot-toast";
 
 const Contacts = () => {
   const [Result, SetResult] = useState(false);
@@ -9,12 +10,7 @@ const Contacts = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const forms = event.target;
-    // const message = form.message.value;
-    // const YourName = form.YourName.value;
-    // const PhoneNumber = form.PhoneNumber.value;
-    // const YourEmail = form.YourEmail.value;
 
-    // const fullInfo = { message, YourName, PhoneNumber, YourEmail };
     emailjs
       .sendForm(
         "service_5zxb6mm",
@@ -25,6 +21,7 @@ const Contacts = () => {
       .then(
         (result) => {
           console.log(result.text);
+          toast.success("your email hasbeen sent successfully");
           SetResult(true);
         },
         (error) => {
@@ -35,70 +32,87 @@ const Contacts = () => {
     forms.reset();
   };
 
-  // hide result
   setTimeout(() => {
     SetResult(false);
   }, 5000);
 
   return (
-    <div className=" grid items-center w-full">
-      <form ref={form} onSubmit={handleSubmit}>
-        <div className="form-control  h-30 ">
-          <label className="label">
-            <span className="label-text">Your Email Address </span>
-          </label>
-          <input
-            type="text"
-            name="YourEmail"
-            placeholder="Type here"
-            className="input input-bordered  h-30 lg:w-3/4 "
-          />
-        </div>
-        <div className="form-control  h-30 ">
-          <label className="label">
-            <span className="label-text">Your Name</span>
-          </label>
-          <input
-            type="text"
-            name="YourName"
-            placeholder="Type here"
-            className="input input-bordered  h-30 lg:w-3/4 "
-          />
-        </div>
-        <div className="form-control  h-30 ">
-          <label className="label">
-            <span className="label-text">Your Phone Number</span>
-          </label>
-          <input
-            type="text"
-            name="PhoneNumber"
-            placeholder="Type here"
-            className="input input-bordered  h-30 lg:w-3/4 "
-          />
-        </div>
-        <div className="form-control  h-30 ">
-          <label className="label">
-            <span className="label-text">Message</span>
-          </label>
-          <input
-            type="text"
-            name="message"
-            placeholder="Type here"
-            className="input input-bordered  h-60 lg:w-3/4 "
-          />
-        </div>
+    <div className="flex flex-col items-center">
+      <h1 className="text-3xl md:text-5xl text-center font-extrabold uppercase">
+        Cotact Me
+      </h1>
 
-        <button className=" btn btn-info m-5">send email</button>
-        <div>
-          {" "}
-          {Result && (
-            <p className="text-red-500">
-              {" "}
-              your email hasbeen sent successfully
-            </p>
-          )}{" "}
+      <div className="max-w-6xl w-full flex justify-center mx-auto my-24 ">
+        <form className="w-full md:w-3/4" ref={form} onSubmit={handleSubmit}>
+          <div className="form-control  ">
+            <label className="label">
+              <span className="label-text">Your Email Address </span>
+            </label>
+            <input
+              required
+              type="text"
+              name="YourEmail"
+              placeholder="Type here"
+              className="input input-bordered  h-30 lg:w-3/4 "
+            />
+          </div>
+          <div className="form-control  ">
+            <label className="label">
+              <span className="label-text">Your Name</span>
+            </label>
+            <input
+              required
+              type="text"
+              name="YourName"
+              placeholder="Type here"
+              className="input input-bordered  h-30 lg:w-3/4 "
+            />
+          </div>
+          <div className="form-control  ">
+            <label className="label">
+              <span className="label-text">Your Phone Number</span>
+            </label>
+            <input
+              required
+              type="text"
+              name="PhoneNumber"
+              placeholder="Type here"
+              className="input input-bordered  h-30 lg:w-3/4 "
+            />
+          </div>
+          <div className="form-control  ">
+            <label className="label">
+              <span className="label-text">Message</span>
+            </label>
+            <textarea
+              required
+              type="text"
+              name="message"
+              placeholder="Type here"
+              className="textarea textarea-bordered h-52 lg:w-3/4"
+            />
+          </div>
+
+          <p className="flex justify-end w-3/4">
+            <button className=" btn btn-info m-5">send email</button>
+          </p>
+        </form>
+      </div>
+
+      <div className="flex justify-between w-full my-24">
+        <div className="flex flex-col items-center gap-5">
+          <h3 className="text-3xl font-bold">Email Me</h3>
+          <p className="text-xl">mdmahmudurrahman987@gmail.com</p>
         </div>
-      </form>
+        <div className="flex flex-col items-center gap-5">
+          <h3 className="text-3xl font-bold">Call Me</h3>
+          <p className="text-xl">+8801671706882</p>
+        </div>
+        <div className="flex flex-col items-center gap-5">
+          <h3 className="text-3xl font-bold">Address</h3>
+          <p className="text-xl">21/2,Meradia,Khilgaon,Dhaka</p>
+        </div>
+      </div>
     </div>
   );
 };

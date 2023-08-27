@@ -1,8 +1,9 @@
 import React from "react";
-import { Link, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 
 const ProjectDetail = () => {
   const project = useLoaderData();
+
   const {
     projectName,
     picture,
@@ -20,7 +21,11 @@ const ProjectDetail = () => {
   return (
     <div className="card w-full  shadow-xl">
       <figure>
-        <img src={picture} alt="Shoes" />
+        <img
+          className=" max-w-2xl w-full min-h-[500px]"
+          src={picture}
+          alt="Shoes"
+        />
       </figure>
       <div className="card-body text-left">
         <h2 className="card-title text-2xl font-bold ">
@@ -45,14 +50,25 @@ const ProjectDetail = () => {
         </div>
         <p className="font-bold"> complete on {registered}</p>
         <div className="card-actions justify-end font-bold text-2xl">
-          <a href={liveSite} target="_blank" className="btn btn-info btn-sm">
+          <a
+            href={liveSite}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="btn btn-info btn-sm"
+          >
             Live site
           </a>
-          <a href={clientSite} target="_blank" className="btn btn-info btn-sm">
+          <a
+            href={clientSite}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="btn btn-info btn-sm"
+          >
             client site
           </a>
           <a
             href={serverSite}
+            rel="noopener noreferrer"
             target="_blank"
             className={serverSite ? "btn btn-info btn-sm" : "hidden"}
           >

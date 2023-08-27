@@ -2,6 +2,10 @@ import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import React from "react";
 import picture from "../../assets/resumi.png";
+import SkillsPage from "../../components/Skills/Skills";
+import EducationPage from "../../components/Education/Education";
+import MyAbility from "../../components/MyAbility/MyAbility";
+import ExperiencePage from "../../components/Experience/Experience";
 const Resumi = () => {
   const printDocument = () => {
     const input = document.getElementById("divToPrint");
@@ -16,14 +20,14 @@ const Resumi = () => {
 
   return (
     <div>
-      <div className="mb5">
+      <div className="flex justify-end">
         <button className="btn btn-info my-6" onClick={printDocument}>
           Print Resumi As Pdf
         </button>
       </div>
       <div
         id="divToPrint"
-        className="mt4"
+        className=" hidden"
         style={{
           backgroundColor: "#f5f5f5",
           width: "210mm",
@@ -33,9 +37,22 @@ const Resumi = () => {
         }}
       >
         {/* <div>Note: Here the dimensions of div are same as A4</div>  */}
-        <div className="p-2">
+        <div className="p-2 border border-black mx-auto">
           <img className="rounded-lg  " src={picture} alt="" />
         </div>
+      </div>
+
+      <div>
+        <SkillsPage />
+      </div>
+      <div>
+        <EducationPage />
+      </div>
+      <div>
+        <ExperiencePage />
+      </div>
+      <div>
+        <MyAbility />
       </div>
     </div>
   );

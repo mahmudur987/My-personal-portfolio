@@ -35,12 +35,9 @@ const router = createBrowserRouter([
       {
         path: "/projectdetail/:id",
         loader: async ({ params }) => {
-          return fetch("projects.json")
-            .then((res) => res.json())
-            .then((data) => {
-              const project = data.find((x) => x._id === params.id);
-              return project;
-            });
+          return fetch(
+            `https://portfolio-server-navy.vercel.app/project/${params.id}`
+          );
         },
         element: <ProjectDetail></ProjectDetail>,
       },

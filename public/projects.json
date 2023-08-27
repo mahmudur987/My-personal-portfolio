@@ -1,76 +1,174 @@
 [
   {
-    "_id": "639782a4802afeabae4c582c",
     "index": 0,
     "isActive": true,
     "balance": "$2,486.17",
     "picture": "https://images.unsplash.com/photo-1605271864611-58dd08d10547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3ljbGUlMjBzdG9yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
-    "features": ["good project", "better project", "best project"],
-    "tecnologies": ["react", "tailwind", "daisiui"],
+    "features": [
+      "A second Hand cycle Selling Website",
+      "Increase online sales",
+      "Make it easy for shoppers to find products 24/7  ",
+      "Save time with a pre-built cycling product catalog"
+    ],
+    "tecnologies": [
+      "React.js",
+      "Tailwind",
+      "daisy-Ui",
+      "Firebase",
+      "Json Web Token",
+      "Node.js",
+      "Express.Js"
+    ],
     "projectName": "Wheeels On fire",
     "about": "A second hand cycle seling website",
-    "discription": "Eu culpa id laboris ad anim proident sint elit non tempor Lorem. Magna culpa est elit qui aliquip tempor et mollit nulla mollit sint. Do nisi consectetur elit ipsum non occaecat qui laboris consequat ullamco. Tempor est magna consequat eiusmod. Aliqua incididunt in veniam tempor culpa.\r\n",
-    "registered": "2016-01-09T02:45:01 +08:00",
+    "discription": "Wheels-on-Fire is the first and largest web portal about bicycle in Bangladesh. We have started our journey on 23rd August, 2013. We publish bike specifications, price, news, tips, reviews, showroom address and brand details etc. Our basic goal is to provide bicycle related essential data to the visitors in easy way. We also share user experiences and their valuable opinion about their bicycle. So that our visitors can get some idea about the bicycle they are looking for",
+    "registered": "2022-10-09",
     "liveSite": "https://wheels-on-fire-6708d.web.app/",
     "clientSite": "https://github.com/mahmudur987/Wheels-on-fire-assign-12",
     "serverSite": "https://github.com/mahmudur987/wheels-on-fire-server-assign-12"
   },
   {
-    "_id": "639782a4765e025ac10566d6",
     "index": 1,
     "isActive": false,
     "balance": "$3,444.52",
     "picture": "https://images.unsplash.com/photo-1586511934875-5c5411eebf79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-    "features": ["good project", "better project", "best project"],
-    "tecnologies": ["react", "tailwind", "daisiui"],
+    "features": [
+      "A Home Made Food Serving Website",
+      "Admin can add a service",
+      "Registered users can review services",
+      "Non-registered users can only visit the site"
+    ],
+    "tecnologies": [
+      "React.js",
+      "Tailwind",
+      "daisy-Ui",
+      "Firebase",
+      "Json Web Token",
+      "Node.js",
+      "Express.Js"
+    ],
+
     "projectName": "  Ma Er Ranna ",
     "about": "A Self food Selling website",
     "discription": "Consequat ut proident sit pariatur. Minim dolore duis occaecat nostrud enim occaecat aliquip Lorem dolor. Dolore tempor nulla labore dolore id adipisicing cillum quis elit. Ex sunt cupidatat sunt quis officia enim. Dolore tempor est non reprehenderit quis et culpa in Lorem aute adipisicing aliqua veniam.\r\n",
-    "registered": "2016-01-09T02:45:01 +08:00",
+    "registered": "2022-10-09",
     "liveSite": "https://ma-er-ranna.web.app/",
     "clientSite": "https://github.com/mahmudur987/Ma-Er-Ranna-assign-11",
     "serverSite": "https://github.com/mahmudur987/ma-Er-Ranna-server-assign-11"
   },
+
   {
-    "_id": "639782a4614edb2106354328",
     "index": 2,
     "isActive": false,
     "balance": "$3,515.47",
     "picture": "https://images.unsplash.com/photo-1571498664957-fde285d79857?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
-    "features": ["good project", "better project", "best project"],
-    "tecnologies": ["react", "tailwind", "daisiui"],
+    "features": [
+      "Online course catalogues",
+      "Self-registration",
+      "Collaboration of various learningtools"
+    ],
+    "tecnologies": [
+      "React.js",
+      "Tailwind",
+      "daisy-Ui",
+      "Firebase",
+      "Json Web Token",
+      "Node.js",
+      "Express.Js"
+    ],
+
     "projectName": "language learnning zone",
     "about": "A Foreign language web for bangladeshi people",
     "discription": "Ut quis ad et deserunt. Nostrud consequat non reprehenderit incididunt minim. Duis ex in in dolor sunt culpa excepteur officia ea eiusmod proident occaecat veniam. Proident minim do deserunt reprehenderit proident do ea id excepteur ad. Dolore veniam minim cupidatat consequat deserunt dolore.\r\n",
-    "registered": "2016-01-09T02:45:01 +08:00",
+    "registered": "2022-10-09",
     "liveSite": "https://language-learnning-zone.web.app/",
     "clientSite": "https://github.com/mahmudur987/language-learning-cone-assign-10",
     "serverSite": "https://github.com/mahmudur987/language-learnning-zone-server-assign-10"
   },
   {
-    "_id": "639782a497d4870e6f8726c6",
     "index": 3,
+    "isActive": false,
+    "balance": "$3,444.52",
+    "picture": "https://images.unsplash.com/photo-1557821552-17105176677c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+    "features": [
+      "A E commerce  Website",
+      "Admin can add a product",
+      "Admin can add user",
+      "admin can remove ,update user and products",
+      "login with phone Number "
+    ],
+    "tecnologies": [
+      "React.js",
+      "Tailwind CSS",
+      "daisy-Ui",
+      "Firebase",
+      "Node.Js",
+      "Express.Js"
+    ],
+
+    "projectName": "  REPlIQ -E-COMMERCE",
+    "about": "A E-COMMERCE website",
+    "discription": "Consequat ut proident sit pariatur. Minim dolore duis occaecat nostrud enim occaecat aliquip Lorem dolor. Dolore tempor nulla labore dolore id adipisicing cillum quis elit. Ex sunt cupidatat sunt quis officia enim. Dolore tempor est non reprehenderit quis et culpa in Lorem aute adipisicing aliqua veniam.\r\n",
+    "registered": "2022-10-09",
+    "liveSite": "https://repliq-e-commerce.web.app/",
+    "clientSite": "https://github.com/mahmudur987/repliq-e-commerce",
+    "serverSite": "https://github.com/mahmudur987/repliq-e-commerce-server"
+  },
+  {
+    "index": 4,
     "isActive": true,
     "balance": "$2,894.33",
     "picture": "https://images.unsplash.com/photo-1523995462485-3d171b5c8fa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80",
-    "features": ["good project", "better project", "best project"],
-    "tecnologies": ["react", "tailwind", "daisiui"],
+    "features": [
+      " Online News Website",
+      "News are sorting",
+      "New News pulish leteast"
+    ],
+    "tecnologies": ["React.js", "Tailwind CSS", "daisy-Ui"],
+
     "projectName": "News OF NATION",
     "about": " a news published website ",
     "discription": "Sint id Lorem aliquip dolore deserunt laboris irure eu eiusmod veniam ea proident. Quis et incididunt non irure consectetur esse quis non in. Lorem sunt proident et sit aliquip amet cillum in laboris. Dolore sunt reprehenderit ad cillum velit amet quis laboris ex voluptate qui. Velit reprehenderit laboris id dolor voluptate.\r\n",
-    "registered": "2016-01-09T02:45:01 +08:00",
+    "registered": "2022-10-09",
     "liveSite": "https://newsofnation.netlify.app/",
     "clientSite": "https://github.com/mahmudur987/news-portal-assign-6",
     "serverSite": ""
   },
   {
-    "_id": "639782a416865c822b82ba30",
-    "index": 4,
+    "index": 5,
+    "isActive": true,
+    "balance": "$2,486.17",
+    "picture": "https://images.unsplash.com/photo-1605271864611-58dd08d10547?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y3ljbGUlMjBzdG9yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+    "features": [
+      "A vehical rent service",
+      "user can rent a car",
+      "Make it easy for shoppers to find car 24/7  ",
+      "Save time with a pre-built rent car catalog"
+    ],
+    "tecnologies": [
+      "React.js",
+      "Tailwind",
+      "daisy-Ui",
+      "Firebase",
+      "Mongo Db",
+      "Node.js",
+      "Express.Js"
+    ],
+    "projectName": "Hero rider",
+    "about": "A second hand cycle seling website",
+    "discription": "Whether you need a car for a weekend getaway, a family vacation, or a business trip, Ren Cars has the perfect vehicle for you. With competitive pricing, flexible rental plans, and exceptional customer service, Ren Cars is the ideal choice for all your car rental needs.",
+    "registered": "2022-10-09",
+    "liveSite": "https://hero-rider-39b76.web.app/",
+    "clientSite": "https://github.com/mahmudur987/hero-rider",
+    "serverSite": "https://github.com/mahmudur987/hero-rider"
+  },
+  {
+    "index": 6,
     "isActive": true,
     "balance": "$1,190.48",
     "picture": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-    "features": ["good project", "better project", "best project"],
-    "tecnologies": ["react", "tailwind", "daisiui"],
+    "features": ["Shopping Website", " Online buy ", "best Features"],
+    "tecnologies": ["React.js", "tailwind CSS", "daisiUi"],
     "projectName": "Ema-jhon",
     "about": "A  Online shop ",
     "discription": "Excepteur veniam in excepteur officia duis reprehenderit voluptate minim laborum cupidatat labore officia duis. Eiusmod dolor aliqua tempor officia veniam eu labore est. Aliqua adipisicing eu aute est adipisicing veniam officia culpa id. Pariatur amet quis veniam et Lorem est proident. Sunt laboris cupidatat commodo et aliqua cupidatat excepteur deserunt Lorem anim. Incididunt eiusmod tempor cillum amet est ad ut id ea qui. Incididunt cillum tempor id amet elit consequat occaecat proident esse culpa ad duis.\r\n",
