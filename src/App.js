@@ -16,7 +16,7 @@ function App() {
         {theme ? "Dark" : "Light"}
       </button>
       <RouterProvider router={router}></RouterProvider>
-      <Toaster></Toaster>
+      <Toaster />
     </div>
   );
 }

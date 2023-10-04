@@ -13,12 +13,14 @@ const WorkCard = ({ work }) => {
           alt="Shoes"
         />
       </figure>
-      <div className="card-body text-left">
-        <h2 className="card-title uppercase font-bold text-green-600">
-          {" "}
-          {projectName}{" "}
-        </h2>
-        <p className="font-bold text-pink-500"> {about} </p>
+      <div className="card-body justify-between text-left">
+        <div>
+          <h2 className="card-title uppercase font-bold text-green-600">
+            {" "}
+            {projectName}{" "}
+          </h2>
+          <p className="font-bold text-pink-500"> {about} </p>
+        </div>
         {/* tech */}
         <div className="my-3">
           Technologies:
