@@ -43,7 +43,7 @@ const Main = () => {
 
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/resumi"}> Resumi</Link>{" "}
+              <Link to={"/resumi"}> Resume</Link>{" "}
             </li>
             <li onClick={() => SetShow(false)}>
               {" "}
