@@ -28,28 +28,28 @@ const ProjectDetail = () => {
         />
       </figure>
       <div className="card-body text-left">
-        <h2 className="card-title text-2xl font-bold ">
+        <h2 className="card-title text-2xl   ">
           {projectName}
           <div className="badge badge-secondary">NEW</div>
         </h2>
-        <p className="font-bold">{about}</p>
-        <p className="font-bold">{discription}</p>
+        <p className=" ">{about}</p>
+        <p className=" ">{discription}</p>
 
-        <div className="font-bold">
+        <div className=" ">
           <p>Project Features</p>
           {features?.map((feature, i) => (
             <li key={i}>{feature}</li>
           ))}
         </div>
 
-        <div className="font-bold">
+        <div className=" ">
           <p>Used Technology</p>
           {tecnologies?.map((feature, i) => (
             <li key={i}>{feature}</li>
           ))}
         </div>
-        <p className="font-bold"> complete on {registered}</p>
-        <div className="card-actions justify-end font-bold text-2xl">
+        <p className=" "> complete on {registered}</p>
+        <div className="card-actions justify-end   text-2xl">
           <a
             href={liveSite}
             rel="noopener noreferrer"

@@ -10,7 +10,7 @@ const Home = () => {
       data-aos-duration="2000"
       className="hero h-[100%] rounded-3xl"
       style={{
-        backgroundImage: `url("https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60")`,
+        backgroundImage: `url("https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1640&q=80")`,
       }}
     >
       <div className="hero-overlay bg-opacity-60"></div>
@@ -19,7 +19,7 @@ const Home = () => {
           <h1
             data-aos="zoom-in-down"
             data-aos-duration="3000"
-            className="mb-5 text-5xl font-bold"
+            className="mb-5 text-5xl "
           >
             {" "}
             Hi, I am Mahmudur Rahman{" "}

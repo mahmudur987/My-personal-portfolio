@@ -14,14 +14,14 @@ const MyAbility = () => {
     {
       title: "Front-End Development",
       description:
-        "Built responsive and interactive user interfaces using HTML, CSS, and JavaScript.",
+        "Built responsive and interactive user interfaces using HTML, CSS, JavaScript and React.",
       image:
         "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
     },
     {
       title: "Back-End Development",
       description:
-        "Created server-side logic and API endpoints using Node.js and Express.js.",
+        "Created server-side logic and API endpoints using Garaph Ql, Node.js and Express.js.",
       image:
         "https://plus.unsplash.com/premium_photo-1685086785013-acc71c40e5fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80",
     },
@@ -49,9 +49,9 @@ const MyAbility = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-3xl md:text-5xl text-center font-bold mb-4">
-        What I Can Do
+    <div className="container mx-auto py-8 w-full flex flex-col gap-10">
+      <h1 className="text-3xl md:text-5xl text-center   mb-4">
+        What I Can Do !{" "}
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {projects.map((project) => (
@@ -67,7 +67,7 @@ const MyAbility = () => {
               alt={project.title}
               className="w-32 h-32 mb-4 rounded-lg"
             />
-            <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
+            <h2 className="text-2xl   mb-2">{project.title}</h2>
             <p className="text-gray-600 text-lg">{project.description}</p>
           </div>
         ))}

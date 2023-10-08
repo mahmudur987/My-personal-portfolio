@@ -98,18 +98,17 @@ const Contacts = () => {
           </p>
         </form>
       </div>
-      {Result && <p>.</p>}
-      <div className="flex justify-between w-full my-24">
+      <div className="flex justify-around flex-wrap gap-5 w-full my-24">
         <div className="flex flex-col items-center gap-5">
-          <h3 className="text-3xl font-bold">Email Me</h3>
+          <h3 className="text-3xl  ">Email Me</h3>
           <p className="text-xl">mdmahmudurrahman987@gmail.com</p>
         </div>
         <div className="flex flex-col items-center gap-5">
-          <h3 className="text-3xl font-bold">Call Me</h3>
+          <h3 className="text-3xl  ">Call Me</h3>
           <p className="text-xl">+8801671706882</p>
         </div>
         <div className="flex flex-col items-center gap-5">
-          <h3 className="text-3xl font-bold">Address</h3>
+          <h3 className="text-3xl  ">Address</h3>
           <p className="text-xl">21/2,Meradia,Khilgaon,Dhaka</p>
         </div>
       </div>

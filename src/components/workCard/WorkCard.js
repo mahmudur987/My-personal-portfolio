@@ -5,7 +5,7 @@ const WorkCard = ({ work }) => {
     work;
 
   return (
-    <div className="card card-compact p-2 bg-base-100 shadow-xl">
+    <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">
       <figure>
         <img
           className=" h-80 w-full m-3 rounded-lg"
@@ -15,11 +15,11 @@ const WorkCard = ({ work }) => {
       </figure>
       <div className="card-body justify-between text-left">
         <div>
-          <h2 className="card-title uppercase font-bold text-green-600">
+          <h2 className="card-title uppercase   text-green-600">
             {" "}
             {projectName}{" "}
           </h2>
-          <p className="font-bold text-pink-500"> {about} </p>
+          <p className="  text-pink-500"> {about} </p>
         </div>
         {/* tech */}
         <div className="my-3">
@@ -28,7 +28,7 @@ const WorkCard = ({ work }) => {
             {" "}
             {tecnologies.map((x, i) => (
               <p className=" flex flex-wrap" key={i}>
-                {i + 1}. <span className="font-bold ">{x}</span>
+                {i + 1}. <span className="  ">{x}</span>
               </p>
             ))}{" "}
           </p>
@@ -40,7 +40,7 @@ const WorkCard = ({ work }) => {
           <ul className="flex flex-col">
             {" "}
             {features.map((x, i) => (
-              <li className=" font-bold flex gap-2 items-center " key={i}>
+              <li className="   flex gap-2 items-center " key={i}>
                 <FaStar /> {x}
               </li>
             ))}{" "}

@@ -13,7 +13,6 @@ const Resumi = () => {
       const imgData = canvas.toDataURL("image/png");
       const pdf = new jsPDF();
       pdf.addImage(imgData, "JPEG", 0, 0);
-      // pdf.output('dataurlnewwindow');
       pdf.save("download.pdf");
     });
   };
@@ -42,17 +41,19 @@ const Resumi = () => {
         </div>
       </div>
 
-      <div>
-        <SkillsPage />
-      </div>
-      <div>
-        <EducationPage />
-      </div>
-      <div>
-        <ExperiencePage />
-      </div>
-      <div>
-        <MyAbility />
+      <div className="container mx-auto w-full flex flex-col gap-10 md:gap-20 lg:gap-30">
+        <div>
+          <SkillsPage />
+        </div>
+        <div>
+          <EducationPage />
+        </div>
+        <div>
+          <ExperiencePage />
+        </div>
+        <div>
+          <MyAbility />
+        </div>
       </div>
     </div>
   );

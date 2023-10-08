@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div className="min-h-screen w-full">
       <div>
-        <Navbar SetShow={SetShow}></Navbar>
+        <Navbar SetShow={SetShow} />
       </div>
       <div className="drawer drawer-mobile bg-base-200 h-full my-20">
         <input id="Home-drwer" type="checkbox" className="drawer-toggle" />
@@ -27,7 +27,7 @@ const Main = () => {
             className={
               show
                 ? "menu p-4 w-80 bg-base-100 text-base-content "
-                : "hidden lg:menu p-4 w-80 bg-base-100 text-base-content font-bold"
+                : "hidden lg:menu p-4 w-80 bg-base-100 text-base-content  "
             }
           >
             <img

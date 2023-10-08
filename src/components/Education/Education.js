@@ -22,8 +22,8 @@ const EducationPage = () => {
   ];
 
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-5xl text-center font-bold mb-4">Education</h1>
+    <div className="container mx-auto py-8 w-full flex flex-col gap-10">
+      <h1 className="text-5xl text-center  mb-4">Education</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         {educationData.map((education) => (
           <div
@@ -33,7 +33,7 @@ const EducationPage = () => {
             key={education.degree}
             className="bg-white shadow-md rounded-md p-4"
           >
-            <h2 className="text-2xl font-bold">{education.degree}</h2>
+            <h2 className="text-2xl ">{education.degree}</h2>
             <p className="text-gray-600 mt-2 text-lg">
               {education.institution}
             </p>

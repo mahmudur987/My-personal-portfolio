@@ -32,18 +32,22 @@ const Projects = () => {
   });
   return (
     <div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
+      <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-blue-700  uppercase">
+        Projects{" "}
+      </h1>
+
+      <div className="flex justify-around flex-wrap gap-5">
         {sortedProjects.map((project) => (
           <Project key={project._id} project={project}></Project>
         ))}
       </div>
 
-      <div className="my-10 border ">
-        <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl font-bold text-green-700 border uppercase">
+      <div className=" my-10 md:my-20 lg:my-30 ">
+        <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-green-700  uppercase">
           Some Small Projects{" "}
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-5">
+        <div className="flex justify-around flex-wrap gap-5">
           {worksData.map((work, i) => (
             <WorkCard key={i} work={work} />
           ))}

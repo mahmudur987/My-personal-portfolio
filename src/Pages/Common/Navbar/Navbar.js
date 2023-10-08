@@ -34,15 +34,16 @@ const Navbar = ({ SetShow }) => {
             {menuItems}
           </ul>
         </div>
-        <Link className="btn btn-ghost font-bold font-sans text-xl md:text-3xl lg:text-5xl">
+        <Link
+          to={"/"}
+          className="btn btn-ghost text-xl md:text-3xl lg:text-5xl"
+        >
           Mahmuds World
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menuItems}</ul>
       </div>
-
-      <div className="navbar-end"></div>
     </div>
   );
 };
