@@ -21,7 +21,7 @@ export const worksData = [
       "Express JS",
       "React-hot-toast",
     ],
-    Specialty: "I am using  MongoDB for authentication first Time",
+    Specialty: "first Time I am using  MongoDB for authentication ",
 
     liveSite: "https://social-mate.netlify.app/",
     clientSite: "https://github.com/mahmudur987/socialmate",
@@ -30,7 +30,7 @@ export const worksData = [
   {
     index: 2,
     projectName: "Movie Hub",
-    about: "A movie-watching platfrom",
+    about: "A movie-show booking platfrom",
     picture: "https://i.ibb.co/xjJvw7Z/movie-hub.png",
     features: [
       "this website is for watching movies in theaters.",
@@ -61,8 +61,8 @@ export const worksData = [
     about: "user can save Daily Routin task",
     picture: "https://i.ibb.co/HTXrKJp/daily-Routin.png",
     features: [
-      "this website is for users daily routin",
-      "Users can add task",
+      " users can maintain his daily routin",
+      "Users can add task for his routin",
       "User login and sign up.  ",
       "Users can delete and update his task",
     ],
@@ -73,7 +73,7 @@ export const worksData = [
       "Node JS",
       "Express JS",
     ],
-    Specialty: "this website update on real time",
+    Specialty: "Here I am using redux",
 
     liveSite: "https://d-routin.netlify.app/",
     clientSite: "https://github.com/mahmudur987/D-routin",
@@ -101,7 +101,7 @@ export const worksData = [
       "Redux",
       "React-hot-toast",
     ],
-    Specialty: "Here I am using redux",
+    Specialty: "Here I am using redux no backend",
 
     liveSite: "https://magazine987.netlify.app/",
     clientSite: "https://github.com/mahmudur987/magazine",

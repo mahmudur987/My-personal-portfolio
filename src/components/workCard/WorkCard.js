@@ -1,8 +1,18 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 const WorkCard = ({ work }) => {
-  const { Specialty, picture, projectName, about, tecnologies, features } =
-    work;
+  console.log(work);
+  const {
+    Specialty,
+    picture,
+    projectName,
+    about,
+    tecnologies,
+    features,
+    liveSite,
+    serverSite,
+    clientSite,
+  } = work;
 
   return (
     <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">
@@ -21,7 +31,7 @@ const WorkCard = ({ work }) => {
           </h2>
           <p className="  text-pink-500"> {about} </p>
         </div>
-        {/* tech */}
+        {/* technologies */}
         <div className="my-3">
           Technologies:
           <p className="grid md:grid-cols-2">
@@ -33,6 +43,7 @@ const WorkCard = ({ work }) => {
             ))}{" "}
           </p>
         </div>
+
         {/* features */}
 
         <div className="my-3">
@@ -54,9 +65,24 @@ const WorkCard = ({ work }) => {
         </div>
 
         <div className="card-actions justify-end">
-          <button className="btn btn-primary btn-sm">Client-Site</button>
-          <button className="btn btn-secondary btn-sm">Server-Site</button>
-          <button className="btn btn-btn-info btn-sm">Live</button>
+          {clientSite && (
+            <a href={clientSite} target="_blank">
+              {" "}
+              <button className="btn btn-primary btn-sm">Client-Site</button>
+            </a>
+          )}
+          {serverSite && (
+            <a href={serverSite} target="_blank">
+              {" "}
+              <button className="btn btn-secondary btn-sm">Server-Site</button>
+            </a>
+          )}
+          {liveSite && (
+            <a href={liveSite} target="_blank">
+              {" "}
+              <button className="btn btn-btn-info btn-sm">Live</button>
+            </a>
+          )}
         </div>
       </div>
     </div>
