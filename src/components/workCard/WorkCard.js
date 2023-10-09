@@ -66,19 +66,19 @@ const WorkCard = ({ work }) => {
 
         <div className="card-actions justify-end">
           {clientSite && (
-            <a href={clientSite} target="_blank">
+            <a href={clientSite} target="_blank" rel="noreferrer">
               {" "}
               <button className="btn btn-primary btn-sm">Client-Site</button>
             </a>
           )}
           {serverSite && (
-            <a href={serverSite} target="_blank">
+            <a href={serverSite} target="_blank" rel="noreferrer">
               {" "}
               <button className="btn btn-secondary btn-sm">Server-Site</button>
             </a>
           )}
           {liveSite && (
-            <a href={liveSite} target="_blank">
+            <a href={liveSite} target="_blank" rel="noreferrer">
               {" "}
               <button className="btn btn-btn-info btn-sm">Live</button>
             </a>

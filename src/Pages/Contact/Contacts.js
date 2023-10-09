@@ -4,8 +4,6 @@ import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
 
 const Contacts = () => {
-  const [Result, SetResult] = useState(false);
-
   const form = useRef();
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -22,7 +20,6 @@ const Contacts = () => {
         (result) => {
           console.log(result.text);
           toast.success("your email hasbeen sent successfully");
-          SetResult(true);
         },
         (error) => {
           alert(error.text);
@@ -31,10 +28,6 @@ const Contacts = () => {
       );
     forms.reset();
   };
-
-  setTimeout(() => {
-    SetResult(false);
-  }, 5000);
 
   return (
     <div className="flex flex-col items-center">
