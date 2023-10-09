@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-hot-toast";
@@ -8,7 +8,6 @@ const Contacts = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const forms = event.target;
-
     emailjs
       .sendForm(
         "service_5zxb6mm",
