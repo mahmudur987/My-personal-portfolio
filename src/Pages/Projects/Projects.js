@@ -37,7 +37,7 @@ const Projects = () => {
       </h1>
 
       <div className="flex justify-around flex-wrap gap-5">
-        {sortedProjects.map((project) => (
+        {sortedProjects?.map((project) => (
           <Project key={project._id} project={project}></Project>
         ))}
       </div>
@@ -48,7 +48,7 @@ const Projects = () => {
         </h1>
 
         <div className="flex justify-around flex-wrap gap-5">
-          {worksData.map((work, i) => (
+          {worksData?.map((work, i) => (
             <WorkCard key={i} work={work} />
           ))}
         </div>

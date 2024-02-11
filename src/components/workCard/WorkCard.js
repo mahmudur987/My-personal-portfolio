@@ -7,7 +7,7 @@ const WorkCard = ({ work }) => {
     picture,
     projectName,
     about,
-    tecnologies,
+    technologies,
     features,
     liveSite,
     serverSite,
@@ -29,14 +29,14 @@ const WorkCard = ({ work }) => {
             {" "}
             {projectName}{" "}
           </h2>
-          <p className="  text-pink-500"> {about} </p>
+          <p className=" font-mono"> {about} </p>
         </div>
         {/* technologies */}
         <div className="my-3">
           Technologies:
           <p className="grid md:grid-cols-2">
             {" "}
-            {tecnologies.map((x, i) => (
+            {technologies?.map((x, i) => (
               <p className=" flex flex-wrap" key={i}>
                 {i + 1}. <span className="  ">{x}</span>
               </p>
@@ -48,10 +48,10 @@ const WorkCard = ({ work }) => {
 
         <div className="my-3">
           Features :
-          <ul className="flex flex-col">
+          <ul className="flex flex-col gap-3">
             {" "}
             {features.map((x, i) => (
-              <li className="   flex gap-2 items-center " key={i}>
+              <li className="   flex gap-2  " key={i}>
                 <FaStar /> {x}
               </li>
             ))}{" "}
