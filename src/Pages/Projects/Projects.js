@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import Loading from "../../components/Loading/Loading";
-import { worksData } from "../../constant/worksData";
+import { WorkingProjects, worksData } from "../../constant/worksData";
 import WorkCard from "../../components/workCard/WorkCard";
 import AXIOSBASEURL from "../../AXIOS/Axios";
 import toast from "react-hot-toast";
@@ -27,20 +27,34 @@ const Projects = () => {
       </div>
     );
   }
-  const sortedProjects = projects.slice().sort((a, b) => {
+  const sortedProjects = projects?.slice().sort((a, b) => {
     return new Date(b.registered) - new Date(a.registered);
   });
+
   return (
     <div>
+      <div className=" my-10 md:my-20 lg:my-30 ">
+        <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-green-700  uppercase">
+          Running Projects{" "}
+        </h1>
+
+        <div className="flex justify-around flex-wrap gap-5">
+          {WorkingProjects?.map((work, i) => (
+            <WorkCard key={i} work={work} />
+          ))}
+        </div>
+      </div>
       <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-blue-700  uppercase">
         Projects{" "}
       </h1>
 
-      <div className="flex justify-around flex-wrap gap-5">
-        {sortedProjects?.map((project) => (
-          <Project key={project._id} project={project}></Project>
-        ))}
-      </div>
+      {sortedProjects && (
+        <div className="flex justify-around flex-wrap gap-5">
+          {sortedProjects?.map((project) => (
+            <Project key={project._id} project={project}></Project>
+          ))}
+        </div>
+      )}
 
       <div className=" my-10 md:my-20 lg:my-30 ">
         <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-green-700  uppercase">

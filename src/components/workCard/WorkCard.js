@@ -1,9 +1,8 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 const WorkCard = ({ work }) => {
-  console.log(work);
   const {
-    Specialty,
+    specialty,
     picture,
     projectName,
     about,
@@ -13,7 +12,7 @@ const WorkCard = ({ work }) => {
     serverSite,
     clientSite,
   } = work;
-
+  console.log(work);
   return (
     <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">
       <figure>
@@ -61,20 +60,20 @@ const WorkCard = ({ work }) => {
 
         <div>
           Specialty :
-          <span className="font-semibold text-red-500"> {Specialty}</span>
+          <span className="font-semibold text-red-500"> {specialty}</span>
         </div>
 
         <div className="card-actions justify-end">
           {clientSite && (
             <a href={clientSite} target="_blank" rel="noreferrer">
               {" "}
-              <button className="btn btn-primary btn-sm">Client-Site</button>
+              <button className="btn btn-primary btn-sm">Front-end</button>
             </a>
           )}
           {serverSite && (
             <a href={serverSite} target="_blank" rel="noreferrer">
               {" "}
-              <button className="btn btn-secondary btn-sm">Server-Site</button>
+              <button className="btn btn-secondary btn-sm">Back-end</button>
             </a>
           )}
           {liveSite && (

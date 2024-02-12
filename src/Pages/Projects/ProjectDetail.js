@@ -3,14 +3,13 @@ import { useLoaderData } from "react-router-dom";
 
 const ProjectDetail = () => {
   const project = useLoaderData();
-
   const {
     projectName,
     picture,
     discription,
     about,
     registered,
-    tecnologies,
+    technologies,
     features,
     clientSite,
     liveSite,
@@ -19,7 +18,7 @@ const ProjectDetail = () => {
   console.log(project);
 
   return (
-    <div className="card w-full  shadow-xl">
+    <div className="card w-full  shadow-xl ">
       <figure>
         <img
           className=" max-w-2xl w-full min-h-[500px]"
@@ -42,13 +41,35 @@ const ProjectDetail = () => {
           ))}
         </div>
 
-        <div className=" ">
+        <div className="font-mono ">
           <p>Used Technology</p>
-          {tecnologies?.map((feature, i) => (
+          {technologies?.map((feature, i) => (
             <li key={i}>{feature}</li>
           ))}
         </div>
-        <p className=" "> complete on {registered}</p>
+        <div className="font-mono flex gap-5 justify-start items-center  max-w-xs">
+          <button>GitHub :</button>
+          <p className="flex-grow flex justify-between ">
+            <a
+              href={clientSite}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-blue-500"
+            >
+              Fron-end
+            </a>
+            <a
+              href={serverSite}
+              rel="noopener noreferrer"
+              target="_blank"
+              className={serverSite ? "text-blue-500" : "hidden"}
+            >
+              {" "}
+              Backend
+            </a>
+          </p>
+        </div>
+        <p className=" font-mono"> complete on {registered}</p>
         <div className="card-actions justify-end   text-2xl">
           <a
             href={liveSite}
@@ -57,23 +78,6 @@ const ProjectDetail = () => {
             className="btn btn-info btn-sm"
           >
             Live site
-          </a>
-          <a
-            href={clientSite}
-            rel="noopener noreferrer"
-            target="_blank"
-            className="btn btn-info btn-sm"
-          >
-            client site
-          </a>
-          <a
-            href={serverSite}
-            rel="noopener noreferrer"
-            target="_blank"
-            className={serverSite ? "btn btn-info btn-sm" : "hidden"}
-          >
-            {" "}
-            Server site
           </a>
         </div>
       </div>

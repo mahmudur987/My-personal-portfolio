@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Project = ({ project }) => {
-  const { projectName, about, _id, picture, tecnologies } = project;
-
+  const { projectName, about, _id, picture, technologies } = project;
   return (
     <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">
       <figure>
@@ -21,9 +20,9 @@ const Project = ({ project }) => {
         <p className=" "> {about} </p>
         <p>
           Technologies :
-          <p className="grid md:grid-cols-2">
+          <p className="flex flex-col gap-2">
             {" "}
-            {tecnologies.map((x, i) => (
+            {technologies?.map((x, i) => (
               <p className="mx-2" key={i}>
                 {i + 1}. {x}
               </p>

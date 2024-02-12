@@ -103,3 +103,60 @@ export const worksData = [
     serverSite: "https://github.com/mahmudur987/magazine",
   },
 ];
+
+export const WorkingProjects = [
+  {
+    index: 1,
+    projectName: "Suvarna Technosoft Pvt. Ltd.",
+    about:
+      "Leading provider of innovative technology-enabled solutions for healthcare.",
+    picture: "https://i.ibb.co/cCjM58X/suvarna.png",
+    features: [
+      "Automated administrative and clinical operations",
+      "Streamlined processes, procedures, and workflows",
+      "Successful accreditations like NABH, NABL, etc.",
+    ],
+    technologies: ["React JS", "Tailwind CSS", "daisy-UI", "React-hot-toast"],
+    specialty: "Using Python for backend",
+    liveSite: "https://banaosuvarna.netlify.app/",
+  },
+  {
+    index: 2,
+    projectName: "Treato",
+    about:
+      "One-stop solution for beauty and wellness needs with fast appointment bookings.",
+    picture: "https://i.ibb.co/qmGCW49/treato.png",
+    features: [
+      "Fast appointment bookings",
+      "Convenient access to beauty and wellness services",
+      "User-friendly interface for easy navigation",
+    ],
+    technologies: [
+      "React JS",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Tailwind CSS",
+    ],
+    specialty: "Seamless user experience with fast appointment bookings",
+    liveSite: "https://treato.netlify.app/",
+  },
+
+  {
+    index: 3,
+    projectName: "Offer Zone BD",
+    about:
+      "Service marketplace collaborating deals & discounts from merchants for customers.",
+    picture: "https://i.ibb.co/LdFPC5D/offer-zone.png",
+    features: [
+      "Collaborates deals & discounts from online/offline merchants",
+      "Connects customers and merchants",
+      "Discover the best available offers or discounts",
+      "Continuous negotiation of discounts from retailers and businesses",
+      ,
+    ],
+    technologies: ["Next js", "Tailwind css", "django"],
+    specialty: "Online discount aggregator brand in Bangladesh",
+    liveSite: "https://offer-zone.vercel.app/",
+  },
+];
