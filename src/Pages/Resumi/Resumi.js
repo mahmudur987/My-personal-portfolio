@@ -20,9 +20,12 @@ const Resumi = () => {
   return (
     <div>
       <div className="flex justify-end">
-        <button className="btn btn-info my-6" onClick={printDocument}>
-          Print Resumi As Pdf
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1ww1abUz_t6yV3ByvlZ-9k_W3SI_LUyoB/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="btn btn-info my-6">Download Resumi </button>
+        </a>
       </div>
       <div
         id="divToPrint"
