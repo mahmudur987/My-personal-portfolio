@@ -6,7 +6,7 @@ import SkillsPage from "../../components/Skills/Skills";
 import EducationPage from "../../components/Education/Education";
 import MyAbility from "../../components/MyAbility/MyAbility";
 import ExperiencePage from "../../components/Experience/Experience";
-const Resumi = () => {
+const Resume = () => {
   const printDocument = () => {
     const input = document.getElementById("divToPrint");
     html2canvas(input).then((canvas) => {
@@ -62,4 +62,4 @@ const Resumi = () => {
   );
 };
 
-export default Resumi;
+export default Resume;

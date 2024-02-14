@@ -5,7 +5,7 @@ import Contacts from "../Pages/Contact/Contacts";
 import Home from "../Pages/Home/Home";
 import ProjectDetail from "../Pages/Projects/ProjectDetail";
 import Projects from "../Pages/Projects/Projects";
-import Resumi from "../Pages/Resumi/Resumi";
+import Resume from "../Pages/Resume/Resume";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/resumi",
-        element: <Resumi></Resumi>,
+        element: <Resume />,
       },
       {
         path: "/projects",
