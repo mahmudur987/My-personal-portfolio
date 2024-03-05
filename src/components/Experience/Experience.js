@@ -2,13 +2,13 @@ import React from "react";
 
 const ExperiencePage = () => {
   const experiences = [
-    // {
-    //   company: "ABC Web Agency",
-    //   position: "Full-Stack Developer",
-    //   duration: "March 2021 - Present",
-    //   description:
-    //     "Worked on developing full-stack web applications using the MERN stack. Collaborated with cross-functional teams to deliver high-quality and scalable solutions.",
-    // },
+    {
+      company: "Across the Globe",
+      position: "Full-Stack Developer",
+      duration: "January 2024 - Present",
+      description:
+        "Worked on developing full-stack web applications using the MERN stack. Collaborated with cross-functional teams to deliver high-quality and scalable solutions.",
+    },
     {
       company: "Isbah It ",
       position: "Full stack Developer",
