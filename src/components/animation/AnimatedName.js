@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 function TextAnimation() {
   const [lines, setLines] = useState([]);
