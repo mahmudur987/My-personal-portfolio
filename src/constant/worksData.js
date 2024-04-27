@@ -144,7 +144,7 @@ export const RunningProjects = [
       "Streamlined processes, procedures, and workflows",
       "Successful accreditations like NABH, NABL, etc.",
     ],
-    technologies: ["React JS", "Tailwind CSS", "daisy-UI", , "Django"],
+    technologies: ["React JS", "Tailwind CSS", "daisy-UI", "Django"],
     liveSite: "https://banaosuvarna.netlify.app/",
   },
 ];
