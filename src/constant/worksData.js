@@ -128,7 +128,6 @@ export const RunningProjects = [
       "Connects customers and merchants",
       "Discover the best available offers or discounts",
       "Continuous negotiation of discounts from retailers and businesses",
-      ,
     ],
     technologies: ["Next js", "Tailwind css", "django"],
     specialty: "Online discount aggregator brand in Bangladesh",
