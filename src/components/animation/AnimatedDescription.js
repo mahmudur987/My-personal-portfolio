@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 function AnimatedDescription() {
   const [currentColorIndex, setCurrentColorIndex] = useState(0);
@@ -11,8 +11,11 @@ function AnimatedDescription() {
   more interactive with web animations. Lets collaborate and build
   something extraordinary together`;
 
-  const colorList = ["red", "blue", "green", "orange", "purple"]; // Add more colors as needed
-  const delay = 200; // Delay between color changes
+  const colorList = useMemo(
+    () => ["red", "blue", "green", "orange", "purple"],
+    []
+  );
+  const delay = 200;
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -21,6 +24,7 @@ function AnimatedDescription() {
     }, delay);
     return () => clearInterval(intervalId);
   }, [colorList, description]);
+
   return (
     <div>
       {description.split("").map((char, index) => (
