@@ -37,7 +37,7 @@ function TextAnimation() {
     };
 
     animateText();
-  }, []);
+  }, [text]);
 
   return (
     <div className="text-center">

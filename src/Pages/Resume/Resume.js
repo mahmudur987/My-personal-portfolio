@@ -1,5 +1,5 @@
-import html2canvas from "html2canvas";
-import jsPDF from "jspdf";
+// import html2canvas from "html2canvas";
+// import jsPDF from "jspdf";
 import React from "react";
 import picture from "../../assets/resumi.png";
 import SkillsPage from "../../components/Skills/Skills";

@@ -20,7 +20,7 @@ function AnimatedDescription() {
       setLetterIndex((prevIndex) => (prevIndex + 1) % description.length);
     }, delay);
     return () => clearInterval(intervalId);
-  }, []);
+  }, [colorList, description]);
   return (
     <div>
       {description.split("").map((char, index) => (
