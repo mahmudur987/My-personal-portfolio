@@ -22,7 +22,6 @@ export const worksData = [
       "React-hot-toast",
     ],
     Specialty: "Utilized MongoDB for the first time for user authentication.",
-
     liveSite: "https://social-mate.netlify.app/",
     clientSite: "https://github.com/mahmudur987/socialmate",
     serverSite: "https://github.com/mahmudur987/socialmate-server",
@@ -48,7 +47,6 @@ export const worksData = [
     ],
     Specialty:
       "Incorporated a third-party movie API for enhanced functionality.",
-
     liveSite: "https://movie-hub9.netlify.app/",
     clientSite: "https://github.com/mahmudur987/movie-hub",
     serverSite: "https://github.com/mahmudur987/movie-hub",
@@ -77,7 +75,6 @@ export const worksData = [
     clientSite: "https://github.com/mahmudur987/D-routin",
     serverSite: "https://github.com/mahmudur987/D-Routin-server",
   },
-
   {
     index: 4,
     projectName: "Magazine",
