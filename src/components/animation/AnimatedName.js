@@ -2,14 +2,17 @@ import { useEffect, useState } from "react";
 
 function TextAnimation() {
   const [lines, setLines] = useState([]);
-  const text = [
-    "Hi, I am Mahmudur Rahman",
-    " I am a Web Developer",
-    " I am a Frontend developer",
-    " I am a MERN Stack developer",
-    " I am a Full Stack developer",
-    " I am a React  developer",
-  ];
+  const text = useMemo(
+    () => [
+      "Hi, I am Mahmudur Rahman",
+      " I am a Web Developer",
+      " I am a Frontend developer",
+      " I am a MERN Stack developer",
+      " I am a Full Stack developer",
+      " I am a React  developer",
+    ],
+    []
+  );
 
   useEffect(() => {
     const animateText = async () => {
