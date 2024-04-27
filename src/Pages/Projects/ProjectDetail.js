@@ -48,7 +48,7 @@ const ProjectDetail = () => {
           <p className="flex-grow flex justify-between ">
             <a
               href={clientSite}
-              rel="noopener noreferrer"
+              rel="noreferrer"
               target="_blank"
               className="text-blue-500"
             >
@@ -56,7 +56,7 @@ const ProjectDetail = () => {
             </a>
             <a
               href={serverSite}
-              rel="noopener noreferrer"
+              rel="noreferrer"
               target="_blank"
               className={serverSite ? "text-blue-500" : "hidden"}
             >
@@ -69,7 +69,7 @@ const ProjectDetail = () => {
         <div className="card-actions justify-end   text-2xl">
           <a
             href={liveSite}
-            rel="noopener noreferrer"
+            rel="noreferrer"
             target="_blank"
             className="btn btn-info btn-sm"
           >
