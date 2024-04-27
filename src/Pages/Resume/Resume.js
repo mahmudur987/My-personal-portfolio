@@ -7,15 +7,15 @@ import EducationPage from "../../components/Education/Education";
 import MyAbility from "../../components/MyAbility/MyAbility";
 import ExperiencePage from "../../components/Experience/Experience";
 const Resume = () => {
-  const printDocument = () => {
-    const input = document.getElementById("divToPrint");
-    html2canvas(input).then((canvas) => {
-      const imgData = canvas.toDataURL("image/png");
-      const pdf = new jsPDF();
-      pdf.addImage(imgData, "JPEG", 0, 0);
-      pdf.save("download.pdf");
-    });
-  };
+  // const printDocument = () => {
+  //   const input = document.getElementById("divToPrint");
+  //   html2canvas(input).then((canvas) => {
+  //     const imgData = canvas.toDataURL("image/png");
+  //     const pdf = new jsPDF();
+  //     pdf.addImage(imgData, "JPEG", 0, 0);
+  //     pdf.save("download.pdf");
+  //   });
+  // };
 
   return (
     <div>
@@ -23,6 +23,7 @@ const Resume = () => {
         <a
           href="https://drive.google.com/file/d/1ww1abUz_t6yV3ByvlZ-9k_W3SI_LUyoB/view?usp=sharing"
           target="_blank"
+          rel="noreferrer"
         >
           <button className="btn btn-info my-6">Download Resumi </button>
         </a>
