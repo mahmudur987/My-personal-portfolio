@@ -104,24 +104,9 @@ export const worksData = [
   },
 ];
 
-export const WorkingProjects = [
+export const RunningProjects = [
   {
     index: 1,
-    projectName: "Suvarna Technosoft Pvt. Ltd.",
-    about:
-      "Leading provider of innovative technology-enabled solutions for healthcare.",
-    picture: "https://i.ibb.co/cCjM58X/suvarna.png",
-    features: [
-      "Automated administrative and clinical operations",
-      "Streamlined processes, procedures, and workflows",
-      "Successful accreditations like NABH, NABL, etc.",
-    ],
-    technologies: ["React JS", "Tailwind CSS", "daisy-UI", , "Django"],
-    specialty: "Using Python for backend",
-    liveSite: "https://banaosuvarna.netlify.app/",
-  },
-  {
-    index: 2,
     projectName: "Treato",
     about:
       "One-stop solution for beauty and wellness needs with fast appointment bookings.",
@@ -132,12 +117,11 @@ export const WorkingProjects = [
       "User-friendly interface for easy navigation",
     ],
     technologies: ["React JS", "Node JS", "Express JS", "MongoDB", " CSS"],
-    specialty: "Seamless user experience with fast appointment bookings",
     liveSite: "https://treato.netlify.app/",
   },
 
   {
-    index: 3,
+    index: 2,
     projectName: "Offer Zone BD",
     about:
       "Service marketplace collaborating deals & discounts from merchants for customers.",
@@ -152,5 +136,19 @@ export const WorkingProjects = [
     technologies: ["Next js", "Tailwind css", "django"],
     specialty: "Online discount aggregator brand in Bangladesh",
     liveSite: "https://offer-zone.vercel.app/",
+  },
+  {
+    index: 3,
+    projectName: "Suvarna Technosoft Pvt. Ltd.",
+    about:
+      "Leading provider of innovative technology-enabled solutions for healthcare.",
+    picture: "https://i.ibb.co/cCjM58X/suvarna.png",
+    features: [
+      "Automated administrative and clinical operations",
+      "Streamlined processes, procedures, and workflows",
+      "Successful accreditations like NABH, NABL, etc.",
+    ],
+    technologies: ["React JS", "Tailwind CSS", "daisy-UI", , "Django"],
+    liveSite: "https://banaosuvarna.netlify.app/",
   },
 ];

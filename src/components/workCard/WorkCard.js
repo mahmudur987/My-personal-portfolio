@@ -24,10 +24,7 @@ const WorkCard = ({ work }) => {
       </figure>
       <div className="card-body justify-between text-left">
         <div>
-          <h2 className="card-title uppercase   text-green-600">
-            {" "}
-            {projectName}{" "}
-          </h2>
+          <h2 className="card-title uppercase   "> {projectName} </h2>
           <p className=" font-mono"> {about} </p>
         </div>
         {/* technologies */}
@@ -37,7 +34,7 @@ const WorkCard = ({ work }) => {
             {" "}
             {technologies?.map((x, i) => (
               <p className=" flex flex-wrap" key={i}>
-                {i + 1}. <span className="  ">{x}</span>
+                <span className="  ">{x}</span>
               </p>
             ))}{" "}
           </p>
@@ -56,28 +53,22 @@ const WorkCard = ({ work }) => {
             ))}{" "}
           </ul>
         </div>
-        {/* special */}
-
-        <div>
-          Specialty :
-          <span className="font-semibold text-red-500"> {specialty}</span>
-        </div>
 
         <div className="card-actions justify-end">
           {clientSite && (
-            <a href={clientSite} target="_blank" rel="noreferrer">
+            <a href={clientSite} target="_blank">
               {" "}
               <button className="btn btn-primary btn-sm">Front-end</button>
             </a>
           )}
           {serverSite && (
-            <a href={serverSite} target="_blank" rel="noreferrer">
+            <a href={serverSite} target="_blank">
               {" "}
               <button className="btn btn-secondary btn-sm">Back-end</button>
             </a>
           )}
           {liveSite && (
-            <a href={liveSite} target="_blank" rel="noreferrer">
+            <a href={liveSite} target="_blank">
               {" "}
               <button className="btn btn-btn-info btn-sm">Live</button>
             </a>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Project from "./Project";
 import Loading from "../../components/Loading/Loading";
-import { WorkingProjects, worksData } from "../../constant/worksData";
+import { RunningProjects } from "../../constant/worksData";
 import WorkCard from "../../components/workCard/WorkCard";
 import AXIOSBASEURL from "../../AXIOS/Axios";
 import toast from "react-hot-toast";
@@ -39,7 +39,7 @@ const Projects = () => {
         </h1>
 
         <div className="flex justify-around flex-wrap gap-5">
-          {WorkingProjects?.map((work, i) => (
+          {RunningProjects?.map((work, i) => (
             <WorkCard key={i} work={work} />
           ))}
         </div>
@@ -55,18 +55,6 @@ const Projects = () => {
           ))}
         </div>
       )}
-
-      <div className=" my-10 md:my-20 lg:my-30 ">
-        <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-green-700  uppercase">
-          Some Small Projects{" "}
-        </h1>
-
-        <div className="flex justify-around flex-wrap gap-5">
-          {worksData?.map((work, i) => (
-            <WorkCard key={i} work={work} />
-          ))}
-        </div>
-      </div>
     </div>
   );
 };

@@ -10,27 +10,27 @@ import Resume from "../Pages/Resume/Resume";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <Main />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
-        path: "/resumi",
+        path: "/resume",
         element: <Resume />,
       },
       {
         path: "/projects",
-        element: <Projects></Projects>,
+        element: <Projects />,
       },
       {
         path: "/contact",
-        element: <Contacts></Contacts>,
+        element: <Contacts />,
       },
       {
         path: "/blog",
-        element: <Blog></Blog>,
+        element: <Blog />,
       },
       {
         path: "/projectdetail/:id",

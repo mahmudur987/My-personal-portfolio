@@ -5,7 +5,7 @@ import "./App.css";
 import router from "./Routes/Routes";
 
 function App() {
-  const [theme, SetTheme] = useState(true);
+  const [theme, SetTheme] = useState(false);
 
   return (
     <div className="App relative " data-theme={theme ? "light" : "dark"}>
@@ -15,7 +15,7 @@ function App() {
       >
         {theme ? "Dark" : "Light"}
       </button>
-      <RouterProvider router={router}></RouterProvider>
+      <RouterProvider router={router} />
       <Toaster />
     </div>
   );

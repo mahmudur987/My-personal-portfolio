@@ -36,9 +36,9 @@ const Navbar = ({ SetShow }) => {
         </div>
         <Link
           to={"/"}
-          className="btn btn-ghost text-xl md:text-3xl lg:text-5xl"
+          className="btn btn-ghost text-xl md:text-3xl lg:text-4xl "
         >
-          Mahmuds World
+          Md Mahmudur Rahman
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">

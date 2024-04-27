@@ -2,8 +2,11 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
+import TextAnimation from "../../components/animation/AnimatedName";
+import AnimatedDescription from "../../components/animation/AnimatedDescription";
 const Home = () => {
   AOS.init();
+
   return (
     <div
       data-aos="zoom-in"
@@ -16,26 +19,12 @@ const Home = () => {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center  text-sky-100">
         <div className="max-w-5xl">
-          <h1
-            data-aos="zoom-in-down"
-            data-aos-duration="3000"
-            className="mb-5 text-5xl "
-          >
-            {" "}
-            Hi, I am Mahmudur Rahman{" "}
-          </h1>
-          <p
-            data-aos="flip-up"
-            data-aos-duration="3000"
-            className="mb-5 w-full"
-          >
-            I am a full-stack developer, I possess a comprehensive understanding
-            of front-end and back-end development. I am well-versed in HTML,
-            CSS, and JavaScript, and have a deep knowledge of React, Redux,
-            TypeScript, Next Js, Node js, Express Js and MongoDB. I can provide
-            clean code and pixel-perfect design. I also make the website more &
-            more interactive with web animations. Let's collaborate and build
-            something extraordinary together.
+          <div className="w-full h-16 flex justify-center items-center">
+            <TextAnimation />
+          </div>
+
+          <p className="mb-5 w-full">
+            <AnimatedDescription />
           </p>
           <a
             rel="noreferrer"

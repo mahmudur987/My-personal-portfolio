@@ -13,9 +13,9 @@ const Main = () => {
       <div className="drawer drawer-mobile bg-base-200 h-full my-20">
         <input id="Home-drwer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
-          <Outlet></Outlet>
+          <Outlet />
         </div>
-        <div className="drawer-side min-h-screen  w-80 lg:overflow-hidden  ">
+        <div className="drawer-side min-h-screen w-80 lg:overflow-hidden">
           <label
             htmlFor="Home-drwer"
             className={
@@ -26,36 +26,66 @@ const Main = () => {
           <ul
             className={
               show
-                ? "menu p-4 w-80 bg-base-100 text-base-content "
-                : "hidden lg:menu p-4 w-80 bg-base-100 text-base-content  "
+                ? "menu p-4 w-80 bg-base-100 text-base-content transition-all duration-300 ease-in-out transform translate-x-0"
+                : "hidden lg:menu p-4 w-80 bg-base-100 text-base-content transition-all duration-300 ease-in-out transform -translate-x-full"
             }
           >
             <img
-              className=" h-80  mx-auto rounded-full p-10"
+              className="h-80 mx-auto rounded-full p-10 transition-transform duration-300 ease-in-out transform hover:scale-105"
               src={img1}
               alt=""
             />
 
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/"}> Home</Link>
+              <Link
+                to={"/"}
+                className="transition-all duration-300 ease-in-out transform hover:scale-105"
+              >
+                {" "}
+                Home
+              </Link>
             </li>
 
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/resumi"}> Resume</Link>{" "}
+              <Link
+                to={"/resume"}
+                className="transition-all duration-300 ease-in-out transform hover:scale-105"
+              >
+                {" "}
+                Resume
+              </Link>{" "}
             </li>
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/projects"}> Portfolio</Link>{" "}
+              <Link
+                to={"/projects"}
+                className="transition-all duration-300 ease-in-out transform hover:scale-105"
+              >
+                {" "}
+                Portfolio
+              </Link>{" "}
             </li>
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/contact"}> Contact </Link>{" "}
+              <Link
+                to={"/contact"}
+                className="transition-all duration-300 ease-in-out transform hover:scale-105"
+              >
+                {" "}
+                Contact{" "}
+              </Link>{" "}
             </li>
             <li onClick={() => SetShow(false)}>
               {" "}
-              <Link to={"/blog"}> BLOG </Link>{" "}
+              <Link
+                to={"/blog"}
+                className="transition-all duration-300 ease-in-out transform hover:scale-105"
+              >
+                {" "}
+                BLOG{" "}
+              </Link>{" "}
             </li>
           </ul>
         </div>

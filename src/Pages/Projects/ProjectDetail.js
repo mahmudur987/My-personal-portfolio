@@ -15,7 +15,6 @@ const ProjectDetail = () => {
     liveSite,
     serverSite,
   } = project;
-  console.log(project);
 
   return (
     <div className="card w-full  shadow-xl ">
@@ -27,10 +26,7 @@ const ProjectDetail = () => {
         />
       </figure>
       <div className="card-body text-left">
-        <h2 className="card-title text-2xl   ">
-          {projectName}
-          <div className="badge badge-secondary">NEW</div>
-        </h2>
+        <h2 className="card-title text-2xl   ">{projectName}</h2>
         <p className=" ">{about}</p>
         <p className=" ">{discription}</p>
 
@@ -56,7 +52,7 @@ const ProjectDetail = () => {
               target="_blank"
               className="text-blue-500"
             >
-              Fron-end
+              Front-end
             </a>
             <a
               href={serverSite}
