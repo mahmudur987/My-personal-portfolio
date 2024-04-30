@@ -17,6 +17,7 @@ const SkillsPage = () => {
     { name: "Tailwin CSS", progress: 80 },
     { name: "Bootstrap", progress: 70 },
     { name: "Styled Component", progress: 70 },
+    { name: "Vue js", progress: 50 },
   ];
 
   return (

@@ -15,7 +15,7 @@ const ProjectDetail = () => {
     liveSite,
     serverSite,
   } = project;
-
+  console.log(project);
   return (
     <div className="card w-full  shadow-xl ">
       <figure>

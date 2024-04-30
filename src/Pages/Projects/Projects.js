@@ -27,15 +27,18 @@ const Projects = () => {
       </div>
     );
   }
-  const sortedProjects = projects?.slice().sort((a, b) => {
-    return new Date(b.registered) - new Date(a.registered);
-  });
+  const sortedProjects = projects
+    ?.filter((x) => x._id !== "65ca683faf25190326cb95d8")
+    .slice()
+    .sort((a, b) => {
+      return new Date(b.registered) - new Date(a.registered);
+    });
 
   return (
-    <div>
+    <div className="my-10">
       <div className=" my-10 md:my-20 lg:my-30 ">
         <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-green-700  uppercase">
-          Running Projects{" "}
+          Clients Projects{" "}
         </h1>
 
         <div className="flex justify-around flex-wrap gap-5">
@@ -45,7 +48,7 @@ const Projects = () => {
         </div>
       </div>
       <h1 className="my-5 text-center text-2xl md:text-3xl lg:text-4xl   text-blue-700  uppercase">
-        Projects{" "}
+        Personal Projects{" "}
       </h1>
 
       {sortedProjects && (

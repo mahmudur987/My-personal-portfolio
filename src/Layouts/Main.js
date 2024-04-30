@@ -15,7 +15,7 @@ const Main = () => {
         <div className="drawer-content">
           <Outlet />
         </div>
-        <div className="drawer-side min-h-screen w-80 lg:overflow-hidden">
+        <div className="drawer-side min-h-screen w-80 lg:overflow-hidden ">
           <label
             htmlFor="Home-drwer"
             className={
@@ -26,7 +26,7 @@ const Main = () => {
           <ul
             className={
               show
-                ? "menu p-4 w-80 bg-base-100 text-base-content transition-all duration-300 ease-in-out transform translate-x-0"
+                ? "menu p-4 w-80 bg-base-100 min-h-screen  text-base-content transition-all duration-300 ease-in-out transform translate-x-0"
                 : "hidden lg:menu p-4 w-80 bg-base-100 text-base-content transition-all duration-300 ease-in-out transform -translate-x-full"
             }
           >
