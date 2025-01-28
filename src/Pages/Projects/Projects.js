@@ -7,26 +7,20 @@ import AXIOSBASEURL from "../../AXIOS/Axios";
 import toast from "react-hot-toast";
 
 const Projects = () => {
-  const [projects, Setprojrcts] = useState([]);
+  const [projects, SetProjects] = useState([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
     AXIOSBASEURL.get("/projects")
       .then((data) => {
         setLoading(false);
-        Setprojrcts(data.data);
+        SetProjects(data.data);
       })
       .catch((err) => {
         toast.error(err.message);
       });
   }, []);
-  if (loading) {
-    return (
-      <div className="min-h-[400px] flex justify-center items-center">
-        <Loading />
-      </div>
-    );
-  }
+
   const sortedProjects = projects
     ?.filter((x) => x._id !== "65ca683faf25190326cb95d8")
     .slice()
@@ -51,7 +45,13 @@ const Projects = () => {
         Personal Projects{" "}
       </h1>
 
-      {sortedProjects && (
+      {loading && (
+        <div className="w-full h-full flex items-center justify-center">
+          <Loading />
+        </div>
+      )}
+
+      {!loading && sortedProjects.length > 0 && (
         <div className="flex justify-around flex-wrap gap-5">
           {sortedProjects?.map((project) => (
             <Project key={project._id} project={project}></Project>

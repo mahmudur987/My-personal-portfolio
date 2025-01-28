@@ -13,6 +13,20 @@ export const RunningProjects = [
     technologies: ["React JS", "Node JS", "Express JS", "MongoDB", " CSS"],
     liveSite: "https://treato.netlify.app/",
   },
+  {
+    index: 7,
+    projectName: "Dentist DNA",
+    about:
+      "At Dentist DNA, we provide cutting-edge solutions for dental practices to grow their business and reach more patients. Let us help you transform your online presence today!",
+    picture: "https://i.ibb.co.com/RpvKxJS/Screenshot-2025-01-28-152852.png",
+    features: [
+      "Cutting-edge solutions for dental practices",
+      "Growing business and reaching more patients",
+      "Transforming online presence today",
+    ],
+    technologies: ["React JS", "Node JS", "Express JS", "MongoDB", " CSS"],
+    liveSite: "https://treato.netlify.app/",
+  },
 
   {
     index: 2,
