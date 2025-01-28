@@ -1,5 +1,19 @@
 export const RunningProjects = [
   {
+    index: 8,
+    projectName: "Hobby Cue",
+    about:
+      "social media website for hobby lovers to share their passion and connect with others.",
+    picture: "https://i.ibb.co.com/9bCdB4y/hhhhhhh.png",
+    features: [
+      "Hobby Cue is a social media website for hobby lovers.",
+      "It allows users to create a profile, upload images and videos, and share their content with others.",
+      "The app also features a real-time chat feature to enable users to communicate with each other.",
+    ],
+    technologies: ["Next JS", "TypeScript", "Express JS", "MongoDB", " CSS"],
+    liveSite: "https://test.hobbycue.com/",
+  },
+  {
     index: 1,
     projectName: "Treato",
     about:
@@ -25,7 +39,7 @@ export const RunningProjects = [
       "Transforming online presence today",
     ],
     technologies: ["React JS", "Node JS", "Express JS", "MongoDB", " CSS"],
-    liveSite: "https://treato.netlify.app/",
+    liveSite: "https://dentist-dna.vercel.app/",
   },
 
   {
