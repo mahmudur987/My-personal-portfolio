@@ -33,13 +33,13 @@ const router = createBrowserRouter([
         element: <Blog />,
       },
       {
-        path: "/projectdetail/:id",
+        path: "/projectDetail/:id",
         loader: async ({ params }) => {
           return fetch(
             `https://portfolio-server-navy.vercel.app/project/${params.id}`
           );
         },
-        element: <ProjectDetail></ProjectDetail>,
+        element: <ProjectDetail />,
       },
     ],
   },

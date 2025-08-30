@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import TextAnimation from "../../components/animation/AnimatedName";
 import AnimatedDescription from "../../components/animation/AnimatedDescription";
+import { Button } from "../../components/ui/button";
 const Home = () => {
   AOS.init();
 
@@ -51,10 +52,10 @@ const Home = () => {
             target={"_blank"}
             href="https://www.linkedin.com/in/md-mahmudur-rahman-466598259/"
           >
-            <button className="text-3xl m-5">
+            <Button className="text-3xl m-5" variant={"ghost"}>
               {" "}
               <FaLinkedin></FaLinkedin>{" "}
-            </button>
+            </Button>
           </a>
         </div>
       </div>

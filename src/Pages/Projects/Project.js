@@ -31,7 +31,7 @@ const Project = ({ project }) => {
         </p>
 
         <div className="card-actions justify-end">
-          <Link to={`/projectdetail/${_id}`}>
+          <Link to={`/projectDetail/${_id}`}>
             <button className="btn btn-outline">Details</button>
           </Link>
         </div>
