@@ -1,7 +1,7 @@
-import React from "react";
+import type { project } from "@/types";
 import { Link } from "react-router";
 
-const Project = ({ project }) => {
+const Project = ({ project }: { project: project }) => {
   const { projectName, about, _id, picture, technologies } = project;
   return (
     <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">

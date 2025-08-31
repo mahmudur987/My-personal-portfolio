@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Project from "./Project";
 import Loading from "../../components/Loading/Loading";
 import { RunningProjects } from "../../constant/worksData";
 import WorkCard from "../../components/workCard/WorkCard";
 import AXIOSBASEURL from "../../AXIOS/Axios";
 import toast from "react-hot-toast";
+import type { project } from "@/types";
 
 const Projects = () => {
-  const [projects, SetProjects] = useState([]);
+  const [projects, SetProjects] = useState<project[]>([]);
   const [loading, setLoading] = useState(false);
   useEffect(() => {
     setLoading(true);
@@ -25,7 +26,9 @@ const Projects = () => {
     ?.filter((x) => x._id !== "65ca683faf25190326cb95d8")
     .slice()
     .sort((a, b) => {
-      return new Date(b.registered) - new Date(a.registered);
+      return (
+        new Date(b.registered).getTime() - new Date(a.registered).getTime()
+      );
     });
 
   return (

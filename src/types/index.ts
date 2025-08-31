@@ -6,4 +6,20 @@ export interface RunningProject {
   features: string[];
   technologies: string[];
   liveSite: string;
+  specialty?: string;
+  description?: string;
+  registered?: string;
+}
+export interface project {
+  _id: string;
+  picture: string;
+  features: string[];
+  projectName: string;
+  about: string;
+  description: string;
+  registered: Date;
+  liveSite: string;
+  clientSite: string;
+  serverSite: string;
+  technologies: string[];
 }

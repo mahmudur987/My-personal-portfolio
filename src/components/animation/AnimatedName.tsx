@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 function TextAnimation() {
-  const [lines, setLines] = useState([]);
+  const [lines, setLines] = useState<string[]>([]);
   const text = useMemo(
     () => [
       " I am a Next Js developer",

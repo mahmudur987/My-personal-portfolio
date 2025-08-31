@@ -1,11 +1,12 @@
+import type { project } from "@/types";
 import { useLoaderData } from "react-router";
 
 const ProjectDetail = () => {
-  const project = useLoaderData();
+  const project = useLoaderData() as project;
   const {
     projectName,
     picture,
-    discription,
+
     about,
     registered,
     technologies,
@@ -27,7 +28,7 @@ const ProjectDetail = () => {
       <div className="card-body text-left">
         <h2 className="card-title text-2xl   ">{projectName}</h2>
         <p className=" ">{about}</p>
-        <p className=" ">{discription}</p>
+        <p className=" ">{project.description}</p>
 
         <div className=" ">
           <p>Project Features</p>
@@ -64,7 +65,7 @@ const ProjectDetail = () => {
             </a>
           </p>
         </div>
-        <p className=" font-mono"> complete on {registered}</p>
+        <p className=" font-mono"> complete on {registered.toISOString()}</p>
         <div className="card-actions justify-end   text-2xl">
           <a
             href={liveSite}

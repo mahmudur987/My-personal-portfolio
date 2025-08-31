@@ -1,17 +1,10 @@
+import type { RunningProject } from "@/types";
 import { FaStar } from "react-icons/fa";
 
-const WorkCard = ({ work }) => {
-  const {
-    picture,
-    projectName,
-    about,
-    technologies,
-    features,
-    liveSite,
-    serverSite,
-    clientSite,
-  } = work;
-  console.log(work);
+const WorkCard = ({ work }: { work: RunningProject }) => {
+  const { picture, projectName, about, technologies, features, liveSite } =
+    work;
+
   return (
     <div className="card card-compact w-full max-w-sm p-2 bg-base-100 shadow-xl">
       <figure>
@@ -54,18 +47,6 @@ const WorkCard = ({ work }) => {
         </div>
 
         <div className="card-actions justify-end">
-          {clientSite && (
-            <a href={clientSite} target="_blank" rel="noreferrer">
-              {" "}
-              <button className="btn btn-primary btn-sm">Front-end</button>
-            </a>
-          )}
-          {serverSite && (
-            <a href={serverSite} target="_blank" rel="noreferrer">
-              {" "}
-              <button className="btn btn-secondary btn-sm">Back-end</button>
-            </a>
-          )}
           {liveSite && (
             <a href={liveSite} target="_blank" rel="noreferrer">
               {" "}
