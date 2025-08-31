@@ -22,6 +22,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ModeToggle } from "../mode-toggle";
 
 interface MenuItem {
   title: string;
@@ -65,13 +66,9 @@ const Navbar = ({
     { title: "Contact", url: "/contact" },
     { title: "BLOG", url: "/blog" },
   ],
-  auth = {
-    login: { title: "Login", url: "#" },
-    signup: { title: "Sign up", url: "#" },
-  },
 }: Navbar1Props) => {
   return (
-    <section className="py-4 container">
+    <section className="p-4  fixed top-0 left-0 right-0 z-50 bg-background mx-auto">
       <div className="container">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex  ">
@@ -82,12 +79,13 @@ const Navbar = ({
                 {logo.title}
               </span>
             </a>
-            <div className="flex items-center">
+            <div className="flex items-center gap-5">
               <NavigationMenu>
                 <NavigationMenuList>
                   {menu.map((item) => renderMenuItem(item))}
                 </NavigationMenuList>
               </NavigationMenu>
+              <ModeToggle />
             </div>
           </div>
         </nav>

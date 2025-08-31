@@ -16,12 +16,28 @@ const HomeSkills = () => {
     { name: "Next.js", progress: 80 },
     { name: "TypeScript", progress: 50 },
     { name: "Redux", progress: 50 },
+    { name: "Graph Ql", progress: 50 },
+    { name: "Tailwin CSS", progress: 80 },
+    { name: "Bootstrap", progress: 70 },
+    { name: "Styled Component", progress: 70 },
+    { name: "Vue js", progress: 50 },
+    { name: "Nest js", progress: 50 },
+    { name: "Mongodb", progress: 50 },
+    { name: "Prisma", progress: 50 },
   ];
 
   return (
-    <div className="container mx-auto py-8  w-full flex flex-col gap-10">
-      <h1 className="text-5xl text-center   mb-4"> Skills</h1>
-      <div className="max-w-3xl mx-auto w-full ">
+    <div className="container mx-auto py-8  w-full flex flex-col gap-5">
+      <h1 className="text-5xl text-center font-bold uppercase  mb-4">
+        {" "}
+        Skills
+      </h1>
+      <div className="flex justify-end ">
+        <Button variant={"secondary"}>
+          <Link to={"/resume"}>Resume</Link>
+        </Button>
+      </div>
+      <div className="max-w-6xl mx-auto w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {skills.map((skill) => (
           <div
             data-aos="fade-right"
@@ -38,10 +54,6 @@ const HomeSkills = () => {
           </div>
         ))}
       </div>
-
-      <Link to={"/resume"} className="flex justify-end">
-        <Button variant={"link"}>see more</Button>
-      </Link>
     </div>
   );
 };

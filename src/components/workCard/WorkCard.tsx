@@ -1,68 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { FaStar } from "react-icons/fa";
-
-interface Work {
-  picture: string;
-  projectName: string;
-  about: string;
-  technologies: string[];
-  features: string[];
-}
-
-const WorkCardSmall = ({ work }: { work: Work }) => {
-  const { picture, projectName, about, technologies, features } = work;
-
-  return (
-    <Card className="w-full max-w-sm overflow-hidden shadow-md rounded-2xl">
-      {/* Image */}
-      <div className="w-full h-64 overflow-hidden">
-        <img
-          src={picture}
-          alt={projectName}
-          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-        />
-      </div>
-
-      {/* Content */}
-      <CardHeader>
-        <CardTitle className="uppercase text-xl font-bold">
-          {projectName}
-        </CardTitle>
-      </CardHeader>
-
-      <CardContent className="space-y-4">
-        {/* About */}
-        <p className="text-sm text-muted-foreground font-mono">{about}</p>
-
-        {/* Technologies */}
-        <div>
-          <p className="font-semibold mb-1">Technologies:</p>
-          <div className="flex flex-wrap gap-2">
-            {technologies?.slice(0, 2).map((tech, i) => (
-              <Badge key={i} variant="secondary">
-                {tech}
-              </Badge>
-            ))}
-          </div>
-        </div>
-
-        {/* Features */}
-        <div>
-          <p className="font-semibold mb-1">Features:</p>
-          <ul className="flex flex-col gap-2">
-            {features.slice(0, 1).map((feature, i) => (
-              <li key={i} className="flex items-start gap-2">
-                <FaStar className="text-yellow-500 mt-1" />
-                <span className="text-sm">{feature.slice(0, 50)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </CardContent>
-    </Card>
-  );
-};
 
 const WorkCard = ({ work }) => {
   const {
@@ -141,7 +77,5 @@ const WorkCard = ({ work }) => {
     </div>
   );
 };
-
-export { WorkCardSmall };
 
 export default WorkCard;

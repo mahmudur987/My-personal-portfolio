@@ -31,9 +31,9 @@ function AnimatedDescription() {
         <span
           key={index}
           style={{
-            color:
-              index === letterIndex ? colorList[currentColorIndex] : "white",
+            color: index === letterIndex ? colorList[currentColorIndex] : "",
           }}
+          className="font-semibold"
         >
           {char}
         </span>

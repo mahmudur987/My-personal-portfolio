@@ -1,4 +1,19 @@
-export const RunningProjects = [
+import type { RunningProject } from "@/types";
+
+export const RunningProjects: RunningProject[] = [
+  {
+    index: 4,
+    projectName: "Kube Tools",
+    about: "Master Kubernetes with Kubetools – We Rank the Top Tools for You.",
+    picture: "https://i.ibb.co/8KRXTKc/kubetools.png",
+    features: [
+      "Cloud spending is overtaking traditional IT hardware",
+      "Still, teams struggle to control the growing cloud costs",
+      "Wasted resources carry a significant environmental toll",
+    ],
+    technologies: ["Next Js", "CSS", "Node Js", "Mongo DB"],
+    liveSite: "https://kube-tools-fe.vercel.app/",
+  },
   {
     index: 8,
     projectName: "Hobby Cue",
@@ -12,6 +27,31 @@ export const RunningProjects = [
     ],
     technologies: ["Next JS", "TypeScript", "Express JS", "MongoDB", " CSS"],
     liveSite: "https://test.hobbycue.com/",
+  },
+  {
+    index: 6,
+    picture: "https://i.ibb.co/9NcF42K/amin-traders.png",
+    features: [
+      "An E-commerce website",
+      "Provide internet service locally",
+      "Selling oil",
+      "Selling gas",
+      "Selling bags",
+    ],
+    technologies: [
+      "Tailwind CSS",
+      "React js",
+      "Firebase Authentication",
+      "Mongo Db",
+      "Node JS",
+      "Express JS",
+    ],
+    projectName: "Amin-Traders",
+    about: "An E-commerce website",
+    description:
+      "At AMIN_TRADERS, we've taken the hassle out of shopping for your everyday essentials. Whether you're looking for high-speed broadband internet to stay connected, cylinder gas for cooking, or quality food oil and woven bags, we have you covered. Welcome to a world of convenience, where your needs are our top priority.",
+    registered: "2023-11-09",
+    liveSite: "https://amin-traders987.netlify.app/",
   },
   {
     index: 1,
@@ -72,19 +112,7 @@ export const RunningProjects = [
     technologies: ["React JS", "Tailwind CSS", "daisy-UI"],
     liveSite: "https://banaosuvarna.netlify.app/",
   },
-  {
-    index: 4,
-    projectName: "Kube Tools",
-    about: "Master Kubernetes with Kubetools – We Rank the Top Tools for You.",
-    picture: "https://i.ibb.co/8KRXTKc/kubetools.png",
-    features: [
-      "Cloud spending is overtaking traditional IT hardware",
-      "Still, teams struggle to control the growing cloud costs",
-      "Wasted resources carry a significant environmental toll",
-    ],
-    technologies: ["Next Js", "CSS", "Node Js", "Mongo DB"],
-    liveSite: "https://kube-tools-fe.vercel.app/",
-  },
+
   {
     index: 5,
     projectName: "Dot  Tech",
@@ -97,30 +125,5 @@ export const RunningProjects = [
     ],
     technologies: ["Next Js", "Tailwind  CSS"],
     liveSite: "https://kube-tools-fe.vercel.app/",
-  },
-  {
-    index: 6,
-    picture: "https://i.ibb.co/9NcF42K/amin-traders.png",
-    features: [
-      "An E-commerce website",
-      "Provide internet service locally",
-      "Selling oil",
-      "Selling gas",
-      "Selling bags",
-    ],
-    technologies: [
-      "Tailwind CSS",
-      "React js",
-      "Firebase Authentication",
-      "Mongo Db",
-      "Node JS",
-      "Express JS",
-    ],
-    projectName: "Amin-Traders",
-    about: "An E-commerce website",
-    description:
-      "At AMIN_TRADERS, we've taken the hassle out of shopping for your everyday essentials. Whether you're looking for high-speed broadband internet to stay connected, cylinder gas for cooking, or quality food oil and woven bags, we have you covered. Welcome to a world of convenience, where your needs are our top priority.",
-    registered: "2023-11-09",
-    liveSite: "https://amin-traders987.netlify.app/",
   },
 ];

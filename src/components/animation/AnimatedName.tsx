@@ -4,12 +4,14 @@ function TextAnimation() {
   const [lines, setLines] = useState([]);
   const text = useMemo(
     () => [
-      "Hi, I am Mahmudur Rahman",
-      " I am a Web Developer",
-      " I am a Frontend developer",
-      " I am a MERN Stack developer",
-      " I am a Full Stack developer",
-      " I am a React  developer",
+      " I am a Next Js developer",
+      " I am a Node Js developer",
+      " I am a Express Js developer",
+      " I am a MongoDB developer",
+      " I am a Firebase developer",
+      " I am a Tailwind Css developer",
+      " I am a Material Ui developer",
+      " I am a Bootstrap developer",
     ],
     []
   );
