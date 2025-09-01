@@ -32,7 +32,7 @@ const HomeSkills = () => {
         {" "}
         Skills
       </h1>
-      <div className="flex justify-end ">
+      <div className="flex justify-end max-w-6xl mx-auto w-full font-bold ">
         <Button variant={"secondary"}>
           <Link to={"/resume"}>Resume</Link>
         </Button>

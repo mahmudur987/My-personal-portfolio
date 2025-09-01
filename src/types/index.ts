@@ -23,3 +23,15 @@ export interface project {
   serverSite: string;
   technologies: string[];
 }
+// src/types/blog.ts
+export type Blog = {
+  id: string;
+  title: string;
+  slug: string;
+  excerpt: string;
+  coverImage: string;
+  author: string;
+  publishedAt: string;
+  readingTime: string;
+  content: string; // stored as HTML string
+};

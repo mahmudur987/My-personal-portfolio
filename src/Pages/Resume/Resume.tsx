@@ -25,7 +25,7 @@ const Resume = () => {
           target="_blank"
           rel="noreferrer"
         >
-          <button className="btn btn-info my-6">Download Resumi </button>
+          <button className="btn btn-info my-6">Download Resume </button>
         </a>
       </div>
       <div

@@ -7,13 +7,13 @@ const SingleProject = ({ work }: { work: RunningProject }) => {
 
   return (
     <div className=" flex justify-center items-center">
-      <Card className="w-full max-w-sm  shadow-md rounded-2xl flex flex-col justify-between h-[600px] ">
+      <Card className="w-full max-w-sm  shadow-md rounded-2xl flex flex-col justify-between h-[500px] ">
         {/* Image */}
         <div className="w-full  overflow-hidden">
           <img
             src={picture}
             alt={projectName}
-            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+            className="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
           />
         </div>
         <div>

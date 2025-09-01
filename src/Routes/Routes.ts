@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import ProjectDetail from "../Pages/Projects/ProjectDetail";
 import Projects from "../Pages/Projects/Projects";
 import Resume from "../Pages/Resume/Resume";
+import BlogDetails from "@/Pages/Blog/BlogDetails";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/blog",
         Component: Blog,
+      },
+      {
+        path: "/blog/:slug",
+        Component: BlogDetails,
       },
       {
         path: "/contact",

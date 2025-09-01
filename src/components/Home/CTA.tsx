@@ -33,8 +33,12 @@ export default function CTA() {
               className="px-6 text-lg"
               asChild
             >
-              <a href="/resume.pdf" target="_blank">
-                Download Resume
+              <a
+                href="https://drive.google.com/file/d/1ww1abUz_t6yV3ByvlZ-9k_W3SI_LUyoB/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="btn btn-info my-6">Download Resume </button>
               </a>
             </Button>
           </div>
