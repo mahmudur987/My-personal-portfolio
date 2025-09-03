@@ -2,7 +2,6 @@
 
 import blogs from "@/constant/blogData";
 import { Link, useParams } from "react-router";
-import Markdown from "react-markdown";
 
 export default function BlogDetails() {
   const { slug } = useParams();

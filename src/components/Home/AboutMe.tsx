@@ -2,8 +2,11 @@ import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import AnimatedDescription from "../animation/AnimatedDescription";
+import AboutSectionItems from "./AboutSection";
+import Aos from "aos";
 
 export default function AboutSection() {
+  Aos.init();
   return (
     <section id="about" className="py-20">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -19,8 +22,17 @@ export default function AboutSection() {
             <h2 className="text-4xl font-bold">About Me</h2>
             <AnimatedDescription />
 
+            <div>
+              <AboutSectionItems />
+            </div>
+
             {/* Highlight Cards */}
-            <div className="grid grid-cols-3 gap-4">
+            <div
+              data-aos="fade-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="2000"
+              className="grid grid-cols-3 gap-4"
+            >
               {[
                 { title: "2+", text: "Years Experience" },
                 { title: "10+", text: "Projects Built" },

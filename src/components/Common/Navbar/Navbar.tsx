@@ -1,5 +1,5 @@
 import { Menu } from "lucide-react";
-
+import logo1 from "../../../assets/logo.png";
 import {
   Accordion,
   AccordionContent,
@@ -54,8 +54,8 @@ interface Navbar1Props {
 
 const Navbar = ({
   logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/logos/shadcnblockscom-icon.svg",
+    url: "/",
+    src: logo1,
     alt: "logo",
     title: "Md Mahmudur Rahman",
   },
@@ -69,17 +69,19 @@ const Navbar = ({
 }: Navbar1Props) => {
   return (
     <section className="p-4  fixed top-0 left-0 right-0 z-50 bg-background mx-auto">
-      <div className="container">
+      <div className="container mx-auto">
         {/* Desktop Menu */}
         <nav className="hidden justify-between lg:flex  ">
-          <div className="flex items-center gap-6 justify-between w-full">
+          <div className="flex items-center gap-6 justify-between w-full ">
             {/* Logo */}
-            <a href={logo.url} className="flex items-center gap-2">
-              <span className="text-lg font-semibold tracking-tighter">
-                {logo.title}
-              </span>
+            <a href={logo.url} className="w-full">
+              <img
+                src={logo.src}
+                className="max-h-12 dark:invert w-60 rounded-2xl"
+                alt=""
+              />{" "}
             </a>
-            <div className="flex items-center gap-5">
+            <div className="flex items-center justify-end gap-5 ">
               <NavigationMenu>
                 <NavigationMenuList>
                   {menu.map((item) => renderMenuItem(item))}
